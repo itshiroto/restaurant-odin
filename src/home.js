@@ -26,7 +26,5 @@ function render() {
 	return main;
 }
 
-export {
-	render,
-};
+export default render;
 

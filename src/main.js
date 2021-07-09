@@ -1,15 +1,23 @@
+import {DOM} from './pageLoad.js';
 function createContainer() {
 	const div = document.createElement('div');
 	div.classList.add("container");
 	return div;
 }
 const nav = (() => {
-	// let navContent = {
-// 
-	// }
+	let navContent = [
+		"Home",
+		"Menu",
+		"Contact",
+	]
+
 	function addItem(text) {
+		let link = document.createElement("a")
 		let item = document.createElement("li");
-		item.innerText = text;
+		link.innerText = text;
+		item.href = "#";
+		item.addEventListener("click", () => DOM.render(text))
+		item.appendChild(link);
 		item.classList.add("nav-item");
 		return item;
 	} 
@@ -20,9 +28,9 @@ const nav = (() => {
 		nav.setAttribute("id", "nav-bar");
 		ul.setAttribute("id", "nav-list");
 
-		ul.appendChild(addItem("Home"));
-		ul.appendChild(addItem("Menu"));
-		ul.appendChild(addItem("Contact"));
+		navContent.forEach(item => {
+			ul.appendChild(addItem(item));
+		});
 
 		nav.appendChild(ul);
 		return nav;
