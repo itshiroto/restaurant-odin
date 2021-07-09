@@ -1,5 +1,5 @@
 import home from './home.js';
-import {nav} from './main.js';
+import {nav} from './includes.js';
 import './style.css';
 "use strict";
 

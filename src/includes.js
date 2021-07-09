@@ -1,4 +1,5 @@
-import {DOM} from './pageLoad.js';
+import {DOM} from './index.js';
+
 function createContainer() {
 	const div = document.createElement('div');
 	div.classList.add("container");
