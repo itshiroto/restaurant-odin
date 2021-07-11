@@ -4,6 +4,8 @@ import {nav} from './includes.js';
 import 'normalize.css';
 import './css/style.css';
 import './css/nav.css';
+import './css/home.css';
+
 "use strict";
 
 const DOM = (() => {

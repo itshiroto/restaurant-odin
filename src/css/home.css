@@ -1,0 +1,26 @@
+#header {
+	position: relative;
+	display: flex;
+	align-items: center;
+	height: 100vh;
+	background-image: url("https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
+	background-position-y: center;
+	background-position-x: 120%;
+	background-size: 60%;
+	background-repeat: no-repeat;
+}
+
+#title {
+	font-family: 'Berkshire Swash', cursive;
+	font-size: 3rem;
+	font-weight: 900;
+}
+
+#sub-title {
+	font-size: 1.2rem;
+	font-weight: 400;
+}
+
+section {
+	margin-bottom: 50px;
+}
