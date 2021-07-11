@@ -1,11 +1,15 @@
 import home from './home.js';
 import {nav} from './includes.js';
-import './style.css';
+
+import 'normalize.css';
+import './css/style.css';
+import './css/nav.css';
 "use strict";
 
 const DOM = (() => {
 	const main = document.querySelector('#content');
 	const body = document.getElementsByTagName("body")[0];
+
 	const render = (item) => {
 		item = item.toLowerCase();
 		if (main.innerHTML) {
@@ -17,6 +21,7 @@ const DOM = (() => {
 		}
 		
 	}
+
 	const init = () => {
 		body.appendChild(nav.create());
 		render("home");
@@ -28,6 +33,7 @@ const DOM = (() => {
 })();
 
 DOM.init()
+
 export {
 	DOM
 }

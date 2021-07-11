@@ -10,73 +10,13 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./src/style.css":
-/*!*************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./src/style.css ***!
-  \*************************************************************/
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0__);\n// Imports\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});\n___CSS_LOADER_EXPORT___.push([module.id, \"@import url(https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap);\"]);\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, \"html {\\n\\tfont-family: 'Merriweather', serif;\\n}\\n\\nbody {\\n\\tposition: relative;\\n\\tmargin: 0;\\n}\\n\\n.container {\\n\\tmargin: 0 auto;\\n\\tmax-width: 75vw;\\n\\twidth: 100%;\\n}\\n\\n#nav-bar {\\n\\tposition: fixed;\\n\\tcolor: white;\\n\\tbackground-color: black;\\n\\ttop: 0;\\n\\theight: 50px;\\n\\twidth: 100%;\\n\\tz-index: 5;\\n}\\n\\n#nav-list {\\n\\tdisplay: flex;\\n\\talign-items: center;\\n\\twidth: 100%;\\n\\theight: 100%;\\n\\tmax-width: 75vw;\\n\\tlist-style-type: none;\\n\\tmargin: 0 auto;\\n\\tjustify-content: space-around;\\n\\tgap: 10px;\\n}\\n\\n#header {\\n\\tposition: relative;\\n\\tdisplay: flex;\\n\\talign-items: center;\\n\\theight: 100vh;\\n\\tbackground-image: url(\\\"https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80\\\");\\n\\tbackground-position-y: center;\\n\\tbackground-position-x: 120%;\\n\\tbackground-size: 60%;\\n\\tbackground-repeat: no-repeat;\\n}\\n\\n#title {\\n\\tfont-family: 'Berkshire Swash', cursive;\\n\\tfont-size: 3rem;\\n\\tfont-weight: 900;\\n}\\n\\n#sub-title {\\n\\tfont-size: 1.2rem;\\n\\tfont-weight: 400;\\n}\\n\\nsection {\\n\\tmargin-bottom: 50px;\\n}\", \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://restaurant-odin/./src/style.css?./node_modules/css-loader/dist/cjs.js");
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/dist/runtime/api.js":
-/*!*****************************************************!*\
-  !*** ./node_modules/css-loader/dist/runtime/api.js ***!
-  \*****************************************************/
-/***/ ((module) => {
-
-eval("\n\n/*\n  MIT License http://www.opensource.org/licenses/mit-license.php\n  Author Tobias Koppers @sokra\n*/\n// css base code, injected by the css-loader\n// eslint-disable-next-line func-names\nmodule.exports = function (cssWithMappingToString) {\n  var list = []; // return the list of modules as css string\n\n  list.toString = function toString() {\n    return this.map(function (item) {\n      var content = cssWithMappingToString(item);\n\n      if (item[2]) {\n        return \"@media \".concat(item[2], \" {\").concat(content, \"}\");\n      }\n\n      return content;\n    }).join(\"\");\n  }; // import a list of modules into the list\n  // eslint-disable-next-line func-names\n\n\n  list.i = function (modules, mediaQuery, dedupe) {\n    if (typeof modules === \"string\") {\n      // eslint-disable-next-line no-param-reassign\n      modules = [[null, modules, \"\"]];\n    }\n\n    var alreadyImportedModules = {};\n\n    if (dedupe) {\n      for (var i = 0; i < this.length; i++) {\n        // eslint-disable-next-line prefer-destructuring\n        var id = this[i][0];\n\n        if (id != null) {\n          alreadyImportedModules[id] = true;\n        }\n      }\n    }\n\n    for (var _i = 0; _i < modules.length; _i++) {\n      var item = [].concat(modules[_i]);\n\n      if (dedupe && alreadyImportedModules[item[0]]) {\n        // eslint-disable-next-line no-continue\n        continue;\n      }\n\n      if (mediaQuery) {\n        if (!item[2]) {\n          item[2] = mediaQuery;\n        } else {\n          item[2] = \"\".concat(mediaQuery, \" and \").concat(item[2]);\n        }\n      }\n\n      list.push(item);\n    }\n  };\n\n  return list;\n};\n\n//# sourceURL=webpack://restaurant-odin/./node_modules/css-loader/dist/runtime/api.js?");
-
-/***/ }),
-
 /***/ "./src/style.css":
 /*!***********************!*\
   !*** ./src/style.css ***!
   \***********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../node_modules/style-loader/dist/runtime/styleDomAPI.js */ \"./node_modules/style-loader/dist/runtime/styleDomAPI.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _node_modules_style_loader_dist_runtime_getTarget_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../node_modules/style-loader/dist/runtime/getTarget.js */ \"./node_modules/style-loader/dist/runtime/getTarget.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_getTarget_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_getTarget_js__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../node_modules/style-loader/dist/runtime/insertStyleElement.js */ \"./node_modules/style-loader/dist/runtime/insertStyleElement.js\");\n/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _node_modules_css_loader_dist_cjs_js_style_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !!../node_modules/css-loader/dist/cjs.js!./style.css */ \"./node_modules/css-loader/dist/cjs.js!./src/style.css\");\n\n      \n      \n      \n      \n      \n      \n      \n\nvar options = {};\n\noptions.styleTagTransform = function(css, style){\n      if (style.styleSheet) {\n        style.styleSheet.cssText = css;\n      } else {\n      while (style.firstChild) {\n        style.removeChild(style.firstChild);\n      }\n\n      style.appendChild(document.createTextNode(css));\n    }\n  };\noptions.setAttributes = function(style) {\n        var nonce =\n           true ? __webpack_require__.nc : 0;\n\n        if (nonce) {\n          style.setAttribute(\"nonce\", nonce);\n        }\n      };\noptions.insert = function(style){\n    var target = _node_modules_style_loader_dist_runtime_getTarget_js__WEBPACK_IMPORTED_MODULE_2___default()(\"head\");\n\n    if (!target) {\n      throw new Error(\n        \"Couldn't find a style target. This probably means that the value for the 'insert' parameter is invalid.\"\n      );\n    }\n\n    target.appendChild(style);\n  };\noptions.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());\noptions.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_3___default());\n\nvar update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_style_css__WEBPACK_IMPORTED_MODULE_4__.default, options);\n\n\n\n\n       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_style_css__WEBPACK_IMPORTED_MODULE_4__.default && _node_modules_css_loader_dist_cjs_js_style_css__WEBPACK_IMPORTED_MODULE_4__.default.locals ? _node_modules_css_loader_dist_cjs_js_style_css__WEBPACK_IMPORTED_MODULE_4__.default.locals : undefined);\n\n\n//# sourceURL=webpack://restaurant-odin/./src/style.css?");
-
-/***/ }),
-
-/***/ "./node_modules/style-loader/dist/runtime/getTarget.js":
-/*!*************************************************************!*\
-  !*** ./node_modules/style-loader/dist/runtime/getTarget.js ***!
-  \*************************************************************/
-/***/ ((module) => {
-
-eval("\n\nvar memo = {};\n/* istanbul ignore next  */\n\nfunction getTarget(target) {\n  if (typeof memo[target] === \"undefined\") {\n    var styleTarget = document.querySelector(target); // Special case to return head of iframe instead of iframe itself\n\n    if (window.HTMLIFrameElement && styleTarget instanceof window.HTMLIFrameElement) {\n      try {\n        // This will throw an exception if access to iframe is blocked\n        // due to cross-origin restrictions\n        styleTarget = styleTarget.contentDocument.head;\n      } catch (e) {\n        // istanbul ignore next\n        styleTarget = null;\n      }\n    }\n\n    memo[target] = styleTarget;\n  }\n\n  return memo[target];\n}\n\nmodule.exports = getTarget;\n\n//# sourceURL=webpack://restaurant-odin/./node_modules/style-loader/dist/runtime/getTarget.js?");
-
-/***/ }),
-
-/***/ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js":
-/*!****************************************************************************!*\
-  !*** ./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js ***!
-  \****************************************************************************/
-/***/ ((module) => {
-
-eval("\n\nvar stylesInDom = [];\n\nfunction getIndexByIdentifier(identifier) {\n  var result = -1;\n\n  for (var i = 0; i < stylesInDom.length; i++) {\n    if (stylesInDom[i].identifier === identifier) {\n      result = i;\n      break;\n    }\n  }\n\n  return result;\n}\n\nfunction modulesToDom(list, options) {\n  var idCountMap = {};\n  var identifiers = [];\n\n  for (var i = 0; i < list.length; i++) {\n    var item = list[i];\n    var id = options.base ? item[0] + options.base : item[0];\n    var count = idCountMap[id] || 0;\n    var identifier = \"\".concat(id, \" \").concat(count);\n    idCountMap[id] = count + 1;\n    var index = getIndexByIdentifier(identifier);\n    var obj = {\n      css: item[1],\n      media: item[2],\n      sourceMap: item[3]\n    };\n\n    if (index !== -1) {\n      stylesInDom[index].references++;\n      stylesInDom[index].updater(obj);\n    } else {\n      stylesInDom.push({\n        identifier: identifier,\n        updater: addStyle(obj, options),\n        references: 1\n      });\n    }\n\n    identifiers.push(identifier);\n  }\n\n  return identifiers;\n}\n\nfunction addStyle(obj, options) {\n  var api = options.domAPI(options);\n  api.update(obj);\n  return function updateStyle(newObj) {\n    if (newObj) {\n      if (newObj.css === obj.css && newObj.media === obj.media && newObj.sourceMap === obj.sourceMap) {\n        return;\n      }\n\n      api.update(obj = newObj);\n    } else {\n      api.remove();\n    }\n  };\n}\n\nmodule.exports = function (list, options) {\n  options = options || {};\n  list = list || [];\n  var lastIdentifiers = modulesToDom(list, options);\n  return function update(newList) {\n    newList = newList || [];\n\n    for (var i = 0; i < lastIdentifiers.length; i++) {\n      var identifier = lastIdentifiers[i];\n      var index = getIndexByIdentifier(identifier);\n      stylesInDom[index].references--;\n    }\n\n    var newLastIdentifiers = modulesToDom(newList, options);\n\n    for (var _i = 0; _i < lastIdentifiers.length; _i++) {\n      var _identifier = lastIdentifiers[_i];\n\n      var _index = getIndexByIdentifier(_identifier);\n\n      if (stylesInDom[_index].references === 0) {\n        stylesInDom[_index].updater();\n\n        stylesInDom.splice(_index, 1);\n      }\n    }\n\n    lastIdentifiers = newLastIdentifiers;\n  };\n};\n\n//# sourceURL=webpack://restaurant-odin/./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js?");
-
-/***/ }),
-
-/***/ "./node_modules/style-loader/dist/runtime/insertStyleElement.js":
-/*!**********************************************************************!*\
-  !*** ./node_modules/style-loader/dist/runtime/insertStyleElement.js ***!
-  \**********************************************************************/
-/***/ ((module) => {
-
-eval("\n\n/* istanbul ignore next  */\nfunction insertStyleElement(options) {\n  var style = document.createElement(\"style\");\n  options.setAttributes(style, options.attributes);\n  options.insert(style);\n  return style;\n}\n\nmodule.exports = insertStyleElement;\n\n//# sourceURL=webpack://restaurant-odin/./node_modules/style-loader/dist/runtime/insertStyleElement.js?");
-
-/***/ }),
-
-/***/ "./node_modules/style-loader/dist/runtime/styleDomAPI.js":
-/*!***************************************************************!*\
-  !*** ./node_modules/style-loader/dist/runtime/styleDomAPI.js ***!
-  \***************************************************************/
-/***/ ((module) => {
-
-eval("\n\n/* istanbul ignore next  */\nfunction apply(style, options, obj) {\n  var css = obj.css;\n  var media = obj.media;\n  var sourceMap = obj.sourceMap;\n\n  if (media) {\n    style.setAttribute(\"media\", media);\n  } else {\n    style.removeAttribute(\"media\");\n  }\n\n  if (sourceMap && typeof btoa !== \"undefined\") {\n    css += \"\\n/*# sourceMappingURL=data:application/json;base64,\".concat(btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))), \" */\");\n  } // For old IE\n\n  /* istanbul ignore if  */\n\n\n  options.styleTagTransform(css, style);\n}\n\nfunction removeStyleElement(style) {\n  // istanbul ignore if\n  if (style.parentNode === null) {\n    return false;\n  }\n\n  style.parentNode.removeChild(style);\n}\n/* istanbul ignore next  */\n\n\nfunction domAPI(options) {\n  var style = options.insertStyleElement(options);\n  return {\n    update: function update(obj) {\n      apply(style, options, obj);\n    },\n    remove: function remove() {\n      removeStyleElement(style);\n    }\n  };\n}\n\nmodule.exports = domAPI;\n\n//# sourceURL=webpack://restaurant-odin/./node_modules/style-loader/dist/runtime/styleDomAPI.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://restaurant-odin/./src/style.css?");
 
 /***/ }),
 
@@ -86,27 +26,27 @@ eval("\n\n/* istanbul ignore next  */\nfunction apply(style, options, obj) {\n  
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"render\": () => (/* binding */ render)\n/* harmony export */ });\n/* harmony import */ var _main_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./main.js */ \"./src/main.js\");\n\n\nfunction createTitle() {\n\tconst header = document.createElement('header');\n\tconst title = document.createElement('h1');\n\tconst subtitle = document.createElement('p');\n\tconst container = (0,_main_js__WEBPACK_IMPORTED_MODULE_0__.createContainer)();\n\ttitle.setAttribute(\"id\", \"title\");\n\tsubtitle.setAttribute(\"id\", \"sub-title\");\n\theader.setAttribute(\"id\", \"header\");\n\n\ttitle.innerText = \"The Nusantara Spices\";\n\tsubtitle.innerHTML = \"High class Indonesian Restaurant, <br>with affordable price.\";\n\n\tcontainer.appendChild(title);\n\tcontainer.appendChild(subtitle);\n\n\theader.appendChild(container);\n\treturn header;\n}\n\nfunction render() {\n\tconst main = document.createElement('div');\n\tmain.setAttribute(\"id\", \"home\");\n\tmain.appendChild(createTitle());\n\treturn main;\n}\n\n\n\n\n\n//# sourceURL=webpack://restaurant-odin/./src/home.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _includes_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./includes.js */ \"./src/includes.js\");\n\n\nfunction createTitle() {\n\tconst header = document.createElement('header');\n\tconst title = document.createElement('h1');\n\tconst subtitle = document.createElement('p');\n\tconst container = (0,_includes_js__WEBPACK_IMPORTED_MODULE_0__.createContainer)();\n\ttitle.setAttribute(\"id\", \"title\");\n\tsubtitle.setAttribute(\"id\", \"sub-title\");\n\theader.setAttribute(\"id\", \"header\");\n\n\ttitle.innerText = \"The Nusantara Spices\";\n\tsubtitle.innerHTML = \"High class Indonesian Restaurant, <br>with affordable price.\";\n\n\tcontainer.appendChild(title);\n\tcontainer.appendChild(subtitle);\n\n\theader.appendChild(container);\n\treturn header;\n}\n\nfunction render() {\n\tconst main = document.createElement('div');\n\tmain.setAttribute(\"id\", \"home\");\n\tmain.appendChild(createTitle());\n\treturn main;\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (render);\n\n\n\n//# sourceURL=webpack://restaurant-odin/./src/home.js?");
 
 /***/ }),
 
-/***/ "./src/main.js":
-/*!*********************!*\
-  !*** ./src/main.js ***!
-  \*********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"createContainer\": () => (/* binding */ createContainer),\n/* harmony export */   \"nav\": () => (/* binding */ nav)\n/* harmony export */ });\nfunction createContainer() {\n\tconst div = document.createElement('div');\n\tdiv.classList.add(\"container\");\n\treturn div;\n}\nconst nav = (() => {\n\tlet navContent = [\n\t\t\"Home\",\n\t\t\"Menu\",\n\t\t\"Contact\",\n\t]\n\n\tfunction addItem(text) {\n\t\tlet item = document.createElement(\"li\");\n\t\titem.innerText = text;\n\t\titem.classList.add(\"nav-item\");\n\t\treturn item;\n\t} \n\n\tfunction create() {\n\t\tlet nav = document.createElement(\"nav\");\n\t\tlet ul = document.createElement(\"ul\");\n\t\tnav.setAttribute(\"id\", \"nav-bar\");\n\t\tul.setAttribute(\"id\", \"nav-list\");\n\n\t\tnavContent.forEach(item => {\n\t\t\tul.appendChild(addItem(item));\n\t\t});\n\n\t\tnav.appendChild(ul);\n\t\treturn nav;\n\t}\n\n\treturn {\n\t\tcreate,\n\t}\n})();\n\n\n\n//# sourceURL=webpack://restaurant-odin/./src/main.js?");
-
-/***/ }),
-
-/***/ "./src/pageLoad.js":
+/***/ "./src/includes.js":
 /*!*************************!*\
-  !*** ./src/pageLoad.js ***!
+  !*** ./src/includes.js ***!
   \*************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _home_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home.js */ \"./src/home.js\");\n/* harmony import */ var _main_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./main.js */ \"./src/main.js\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\n\n\n\"use strict\";\n\nconst DOM = (() => {\n\tconst main = document.querySelector('#content');\n\tconst render = (item) => {\n\t\tmain.appendChild(item);\n\t}\n\tconst init = () => {\n\t\trender(_main_js__WEBPACK_IMPORTED_MODULE_1__.nav.create())\n\t\trender(_home_js__WEBPACK_IMPORTED_MODULE_0__.render());\n\t}\n\treturn {\n\t\tinit,\n\t\trender,\n\t}\n})();\n\nDOM.init()\n\n\n//# sourceURL=webpack://restaurant-odin/./src/pageLoad.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"createContainer\": () => (/* binding */ createContainer),\n/* harmony export */   \"nav\": () => (/* binding */ nav)\n/* harmony export */ });\n/* harmony import */ var _index_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.js */ \"./src/index.js\");\n\n\nfunction createContainer() {\n\tconst div = document.createElement('div');\n\tdiv.classList.add(\"container\");\n\treturn div;\n}\nconst nav = (() => {\n\tlet navContent = [\n\t\t\"Home\",\n\t\t\"Menu\",\n\t\t\"Contact\",\n\t]\n\n\tfunction addItem(text) {\n\t\tlet link = document.createElement(\"a\")\n\t\tlet item = document.createElement(\"li\");\n\t\tlink.innerText = text;\n\t\titem.href = \"#\";\n\t\titem.addEventListener(\"click\", () => _index_js__WEBPACK_IMPORTED_MODULE_0__.DOM.render(text))\n\t\titem.appendChild(link);\n\t\titem.classList.add(\"nav-item\");\n\t\treturn item;\n\t} \n\n\tfunction create() {\n\t\tlet nav = document.createElement(\"nav\");\n\t\tlet ul = document.createElement(\"ul\");\n\t\tnav.setAttribute(\"id\", \"nav-bar\");\n\t\tul.setAttribute(\"id\", \"nav-list\");\n\n\t\tnavContent.forEach(item => {\n\t\t\tul.appendChild(addItem(item));\n\t\t});\n\n\t\tnav.appendChild(ul);\n\t\treturn nav;\n\t}\n\n\treturn {\n\t\tcreate,\n\t}\n})();\n\n\n\n//# sourceURL=webpack://restaurant-odin/./src/includes.js?");
+
+/***/ }),
+
+/***/ "./src/index.js":
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"DOM\": () => (/* binding */ DOM)\n/* harmony export */ });\n/* harmony import */ var _home_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home.js */ \"./src/home.js\");\n/* harmony import */ var _includes_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./includes.js */ \"./src/includes.js\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\n\n\n\"use strict\";\n\nconst DOM = (() => {\n\tconst main = document.querySelector('#content');\n\tconst body = document.getElementsByTagName(\"body\")[0];\n\tconst render = (item) => {\n\t\titem = item.toLowerCase();\n\t\tif (main.innerHTML) {\n\t\t\tmain.innerHTML = \"\";\n\t\t}\n\t\tswitch (item) {\n\t\t\tcase 'home': main.appendChild((0,_home_js__WEBPACK_IMPORTED_MODULE_0__.default)()); break;\n\t\t\tdefault: console.warn(\"There's no element with that name\"); break;\n\t\t}\n\t\t\n\t}\n\tconst init = () => {\n\t\tbody.appendChild(_includes_js__WEBPACK_IMPORTED_MODULE_1__.nav.create());\n\t\trender(\"home\");\n\t}\n\treturn {\n\t\tinit,\n\t\trender,\n\t}\n})();\n\nDOM.init()\n\n\n//# sourceURL=webpack://restaurant-odin/./src/index.js?");
 
 /***/ })
 
@@ -124,7 +64,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _hom
 /******/ 		}
 /******/ 		// Create a new module (and put it into the cache)
 /******/ 		var module = __webpack_module_cache__[moduleId] = {
-/******/ 			id: moduleId,
+/******/ 			// no module.id needed
 /******/ 			// no module.loaded needed
 /******/ 			exports: {}
 /******/ 		};
@@ -137,18 +77,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _hom
 /******/ 	}
 /******/ 	
 /************************************************************************/
-/******/ 	/* webpack/runtime/compat get default export */
-/******/ 	(() => {
-/******/ 		// getDefaultExport function for compatibility with non-harmony modules
-/******/ 		__webpack_require__.n = (module) => {
-/******/ 			var getter = module && module.__esModule ?
-/******/ 				() => (module['default']) :
-/******/ 				() => (module);
-/******/ 			__webpack_require__.d(getter, { a: getter });
-/******/ 			return getter;
-/******/ 		};
-/******/ 	})();
-/******/ 	
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
@@ -181,8 +109,8 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _hom
 /******/ 	
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
-/******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./src/pageLoad.js");
+/******/ 	// This entry module is referenced by other modules so it can't be inlined
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/index.js");
 /******/ 	
 /******/ })()
 ;

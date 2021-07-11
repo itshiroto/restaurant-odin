@@ -1,10 +1,11 @@
-import {createContainer} from './main.js';
+import {createContainer} from './includes.js';
 
 function createTitle() {
 	const header = document.createElement('header');
 	const title = document.createElement('h1');
 	const subtitle = document.createElement('p');
 	const container = createContainer();
+
 	title.setAttribute("id", "title");
 	subtitle.setAttribute("id", "sub-title");
 	header.setAttribute("id", "header");
