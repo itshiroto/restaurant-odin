@@ -1,4 +1,5 @@
 import {createContainer} from './includes.js';
+import './css/home.css';
 
 function createTitle() {
 	const header = document.createElement('header');

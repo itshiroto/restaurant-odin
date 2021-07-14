@@ -1,0 +1,33 @@
+#menu {
+	display: flex;
+	gap: 1rem;
+	margin: auto;
+	justify-content: center;
+}
+
+.menu-item {
+	height:auto;
+	width: 300px;
+	position:relative;
+	background-color: white;
+	box-shadow: 5px 5px 18px 0px rgba(0,0,0,0.40);
+}
+
+.menu-item img {
+	width: 100%;
+}
+
+.item-text {
+	padding: 1rem;
+}
+
+.item-name {
+	margin: 0;
+}
+
+.item-desc {
+	margin: 0;
+	margin-top: 1rem;
+}
+
+

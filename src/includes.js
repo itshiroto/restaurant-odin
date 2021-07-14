@@ -29,9 +29,7 @@ const nav = (() => {
 		nav.setAttribute("id", "nav-bar");
 		ul.setAttribute("id", "nav-list");
 
-		navContent.forEach(item => {
-			ul.appendChild(addItem(item));
-		});
+		navContent.forEach(item => ul.appendChild(addItem(item)));
 
 		nav.appendChild(ul);
 		return nav;

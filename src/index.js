@@ -1,17 +1,16 @@
 import home from './home.js';
+import menu from './menu.js';
 import {nav} from './includes.js';
 
 import 'normalize.css';
 import './css/style.css';
 import './css/nav.css';
-import './css/home.css';
 
 "use strict";
 
 const DOM = (() => {
+	const body = document.getElementsByTagName('body')[0];
 	const main = document.querySelector('#content');
-	const body = document.getElementsByTagName("body")[0];
-
 	const render = (item) => {
 		item = item.toLowerCase();
 		if (main.innerHTML) {
@@ -19,13 +18,12 @@ const DOM = (() => {
 		}
 		switch (item) {
 			case 'home': main.appendChild(home()); break;
+			case 'menu': main.appendChild(menu()); break;
 			default: console.warn("There's no element with that name"); break;
 		}
-		
 	}
-
 	const init = () => {
-		body.appendChild(nav.create());
+		body.prepend(nav.create());
 		render("home");
 	}
 	return {
@@ -39,3 +37,5 @@ DOM.init()
 export {
 	DOM
 }
+
+DOM.render("menu")

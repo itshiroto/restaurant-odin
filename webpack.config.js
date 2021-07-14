@@ -8,6 +8,7 @@ module.exports = {
   devServer: {
     contentBase: './dist',
   },
+  devtool: 'inline-source-map',
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
@@ -24,6 +25,10 @@ module.exports = {
           devMode ? "style-loader" : MiniCssExtractPlugin.loader,
           "css-loader"
         ],
+      },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
       },
     ],
   },
