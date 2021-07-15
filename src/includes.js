@@ -1,10 +1,15 @@
 import {DOM} from './index.js';
 
-function createContainer() {
-	const div = document.createElement('div');
-	div.classList.add("container");
-	return div;
+function createDOM(element, cls) {
+	const base = document.createElement(element);
+	base.classList.add(cls);
+	return base;
 }
+
+function createContainer() {
+	return createDOM("div", "container");
+}
+
 const nav = (() => {
 	let navContent = [
 		"Home",
@@ -42,5 +47,6 @@ const nav = (() => {
 
 export {
 	createContainer,
+	createDOM,
 	nav,
 };

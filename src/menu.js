@@ -1,4 +1,4 @@
-import {createContainer} from './includes.js';
+import {createContainer, createDOM} from './includes.js';
 import menu from './data/menu.json';
 import './css/menu.css';
 
@@ -10,27 +10,26 @@ function init() {
 
 const card = (() => {
 	const addText = (name, desc) => {
-		const base = document.createElement('div');
-		const nameDOM = document.createElement('h2');
-		const descDOM = document.createElement('p');
+		const base = createDOM('div', "item-text");
+		const nameDOM = createDOM('h2', "item-name");
+		const descDOM = createDOM('p', "item-desc");
 		nameDOM.innerText = name;
 		descDOM.innerText = desc;
-		nameDOM.classList.add("item-name");
-		descDOM.classList.add("item-desc");
-		base.classList.add("item-text");
 		base.append(nameDOM, descDOM);
 		return base;
 	}
 	const addImg = (img) => {
 		if (img == undefined) return "";
+		const parent = createDOM('div', "img-base");
 		const imgDOM = new Image();
 		imgDOM.src = require('./img/' + img);
-		return imgDOM;
+		parent.append(imgDOM);
+		return parent;
 	}
 	const create = (item) => {
 		const card = document.createElement('div');
 		card.classList.add("menu-item")
-		card.append(addImg(item.img),addText(item.name, item.desc));
+		card.append(addImg(item.img), addText(item.name, item.desc));
 		return card;
 	}
 	return {
