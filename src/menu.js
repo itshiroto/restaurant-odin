@@ -2,13 +2,12 @@ import {createContainer, createDOM} from './includes.js';
 import menu from './data/menu.json';
 import './css/menu.css';
 
-function init() {
-	const grid = document.createElement('section');
-	grid.setAttribute('id', 'menu');
-	return grid;
-}
-
-const card = (() => {
+const list = (() => {
+	const init = () => {
+		const grid = document.createElement('section');
+		grid.setAttribute('id', 'menu-list');
+		return grid;
+	}
 	const addTitle = (name, price) => {
 		const parent = createDOM('div', "item-title")
 		const nameDOM = createDOM('h2', "item-name");
@@ -39,23 +38,57 @@ const card = (() => {
 		parent.append(imgDOM);
 		return parent;
 	}
-	const create = (item) => {
+	const createCard = (item) => {
 		const card = document.createElement('div');
 		card.classList.add("menu-item")
 		card.append(addImg(item.img), addText(item));
 		return card;
 	}
+
+	const render = () => {
+		const base = init();
+		menu.forEach(item => base.appendChild(createCard(item)));
+		return base;
+	}
+	
 	return {
-		create,
+		render
 	}
 })();
 
-function render() {
-	const base = init();
-	menu.forEach(item => base.appendChild(card.create(item)));
-	const container = createContainer();
-	container.appendChild(base);
-	return container;
+const title = (() => {
+	const createHeading = () => {
+		const heading = createDOM('h1');
+		heading.setAttribute ('id', "menu-title")
+		heading.innerText = "Menu";
+		return heading;
+	}
+	const createDesc = () => {
+		const desc = createDOM('p');
+		desc.innerText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+		desc.setAttribute('id', "menu-subtitle");
+		return desc;
+
+	}
+	const render = () => {
+		const base = createDOM("section");
+		base.setAttribute('id', "menu-greeter")
+		base.append(createHeading(), createDesc());
+		return base;
+	}
+	return {
+		render
+	}
+})()
+
+
+
+const render = () => {
+	const page = createContainer();
+	page.setAttribute('id', 'menu-page');
+	page.appendChild(title.render())
+	page.appendChild(list.render());
+	return page;
 }
 
-export default render;
+export default render

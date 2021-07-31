@@ -2,7 +2,9 @@ import {DOM} from './index.js';
 
 function createDOM(element, cls) {
 	const base = document.createElement(element);
-	base.classList.add(cls);
+	if (cls) {
+		base.classList.add(cls);
+	} 
 	return base;
 }
 
