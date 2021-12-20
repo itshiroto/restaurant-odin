@@ -1,0 +1,25 @@
+#home {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  min-height:100vh;
+  padding: 0 25vw;
+  text-align: center;
+  color: white;
+  background-image: url(../asset/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#home-title {
+  margin: 24px 0;
+  font-family: 'Abril Fatface', cursive;
+  font-size: 6rem;
+  letter-spacing: -2px;
+  line-height: 0.8;
+}
+
+#home-description {
+  margin-top: 24px;
+}
