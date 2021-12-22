@@ -7,9 +7,13 @@ import css from './css/index.css';
 
 const DOM = (() => {
   const body = document.getElementsByTagName('body')[0];
+  const query = new URLSearchParams(window.location.search);
+  const page = query.get('page')
   const init = () => {
     body.prepend(nav());
-    changePage("home");
+
+    if (page) changePage(page);
+    else changePage("home");
   }
   return {
     init,
