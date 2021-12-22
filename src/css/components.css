@@ -18,4 +18,9 @@
   width: 7em;
   height: 40px;
   text-align: center;
+  cursor: pointer;
+}
+
+.nav-item:hover {
+  background-color: grey;
 }

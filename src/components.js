@@ -1,5 +1,6 @@
 import navCSS from "./css/components.css";
 import menu from "./data/menu.json";
+import { changePage, updateURL } from './controller.js'
 
 const nav = (() => {
   let content = menu;
@@ -18,8 +19,12 @@ const nav = (() => {
       let menu = document.createElement('a');
 
       menu.innerText = obj.title;
-      menu.href = obj.href;
+      // menu.href = '#';
       menu.classList.add('nav-item', 'flex', 'jc-center', 'al-center');
+      menu.addEventListener("click", () => {
+        changePage(obj.title);
+        updateURL(obj.title);
+      });
 
       navMenu.appendChild(menu);
     })
