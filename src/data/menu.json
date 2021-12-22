@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Home",
+    "href": "?page=home"
+  },
+  {
+    "title": "Menu",
+    "href": "?page=menu"
+  },
+  {
+    "title": "Contact",
+    "href": "?page=contact"
+  }
+]

@@ -1,0 +1,21 @@
+#nav-bar {
+  display: flex;
+  position: fixed;
+  top: 0;
+  background-color: black;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+#nav-menu {
+  height: 100%;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: white;
+  width: 7em;
+  height: 40px;
+  text-align: center;
+}
