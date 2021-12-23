@@ -24,3 +24,13 @@
 .nav-item:hover {
   background-color: grey;
 }
+
+.title {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 4em;
+}
+
+.subtitle {
+  font-weight: 400;
+  font-size: 1.4em;
+}

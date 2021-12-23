@@ -1,0 +1,9 @@
+#menu-header {
+  margin-top: 100px;
+  flex-direction: column;
+}
+
+#menu-title, #menu-subtitle {
+  margin: 0;
+  margin-top: 10px;
+}

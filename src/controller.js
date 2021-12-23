@@ -1,4 +1,5 @@
 import home from './home.js';
+import menu from './menu.js';
 
 function changePage(page) {
   const content = document.querySelector('#content');
@@ -8,6 +9,7 @@ function changePage(page) {
   }
   switch (page) {
     case 'home': content.appendChild(home()); break;
+    case 'menu': content.appendChild(menu()); break;
     default: console.warn("There's no page with that name"); break;
   }
 }

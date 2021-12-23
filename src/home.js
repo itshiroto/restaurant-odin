@@ -1,44 +1,45 @@
-import * as components from './components.js'
+import { createContainer, heading as components } from './components.js'
 
 import css from './css/home.css';
+import data from './data/page.json';
+
+data = data.home;
 
 const home = (() => {
   const name = () => {
-    const el = components.subtitle("Le Restaurant de Hiroto");
+    const el = components.subtitle(data.subtitle);
     el.id = "home-subtitle";
     return el;
   }
   const heading = () => {
-    const el = components.title("Finest food <br>on the city");
+    const el = components.title(data.title);
     el.id = 'home-title';
     return el;
   };
   const desc = () => {
-    const el = components.description("One of the best restaurant with beautiful looking view and delicious food. You will be mesmerized by the taste and the place of this beautiful restaurant.");
+    const el = components.description(data.desc);
     el.id = 'home-description';
     return el;
   }
 
-  const hello = () => {
-    const p = document.createElement('p');
-    p.innerText = "Hello World! This is from home object";
-    return p;
+  // const hello = () => {
+  //   const p = document.createElement('p');
+  //   p.innerText = "Hello World! This is from home object";
+  //   return p;
+  // }
+
+  const render = () => {
+    const bg = document.createElement('section');
+    bg.id = 'home';
+
+    const el = createContainer();
+    el.append(name(), heading(), desc());
+    el.id = 'home-element';
+    bg.appendChild(el);
+    return bg;
   }
 
-  return {
-    name,
-    heading,
-    desc,
-  }
+  return render;
 })()
 
-function render() {
-  const main = document.createElement('div');
-  main.setAttribute('id', 'home');
-  main.appendChild(home.name());
-  main.appendChild(home.heading());
-  main.appendChild(home.desc());
-  return main;
-}
-
-export default render;
+export default home;

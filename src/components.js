@@ -2,6 +2,12 @@ import navCSS from "./css/components.css";
 import menu from "./data/menu.json";
 import { changePage, updateURL } from './controller.js'
 
+function createContainer() {
+  const el = document.createElement('div');
+  el.classList.add('container');
+  return el;
+}
+
 const nav = (() => {
   let content = menu;
   const createBar = () => {
@@ -39,30 +45,35 @@ const nav = (() => {
   return render;
 })();
 
-function title(text) {
-  const el = document.createElement('h1');
-  el.classList.add("title");
-  el.innerHTML = text;
-  return el;
-}
+const heading = (() => {
+  function title(text) {
+    const el = document.createElement('h1');
+    el.classList.add("title");
+    el.innerHTML = text;
+    return el;
+  }
 
-function subtitle(text) {
-  const el = document.createElement('h2');
-  el.classList.add("subtitle");
-  el.innerHTML = text;
-  return el;
-}
+  function subtitle(text) {
+    const el = document.createElement('h2');
+    el.classList.add("subtitle");
+    el.innerHTML = text;
+    return el;
+  }
 
-function description(text) {
-  const el = document.createElement('p');
-  el.classList.add("desc");
-  el.innerHTML = text;
-  return el;
-}
+  function description(text) {
+    const el = document.createElement('p');
+    el.classList.add("desc");
+    el.innerHTML = text;
+    return el;
+  }
+  return {
+    title, subtitle, description
+  }
+})();
+
 
 export {
-  title,
-  subtitle,
-  description,
+  heading,
   nav,
+  createContainer,
 }
