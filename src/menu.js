@@ -1,20 +1,23 @@
 import {
   createContainer,
   heading,
+  card,
 } from './components.js'
 
 import './css/menu.css'
-import data from './data/page.json'
-data = data.menu;
+import page from './data/page.json'
+page = page.menu;
+
+import menu from './data/food-menu.json'
 
 const header = (() => {
   const title = () => {
-    const el = heading.title(data.title)
+    const el = heading.title(page.title)
     el.id = 'menu-title';
     return el;
   };
   const subtitle = () => {
-    const el = heading.subtitle(data.subtitle);
+    const el = heading.subtitle(page.subtitle);
     el.id = 'menu-subtitle';
     return el;
   }
@@ -23,20 +26,26 @@ const header = (() => {
     const el = document.createElement('div');
     el.append(title(), subtitle());
     el.id = "menu-header";
-    el.classList.add('flex', 'jc-center', 'al-center');
     return el;
   }
 
   return render;
 })();
 
-const card = (() => {
-  // TODO
-})
+function menuList() {
+  const base = document.createElement('div');
+  base.id = 'menu-list';
+  menu.forEach(el => {
+    el.price = "Rp" + (el.price * 1000).toLocaleString()
+    base.appendChild(card(el));
+  });
+  return base;
+}
 
 function init() {
   const container = createContainer();
   container.appendChild(header());
+  container.appendChild(menuList());
   return container;
 }
 

@@ -34,3 +34,45 @@
   font-weight: 400;
   font-size: 1.4em;
 }
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 5px;
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 300px;
+  min-width: 250px;
+}
+
+.card-title, .card-desc, .card-price {
+  margin: 0;
+  margin-bottom: 10px;
+}
+.card-title {
+  font-size: 1.5em;
+}
+
+.card-price {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.card-desc {
+  font-size: 0.95rem;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-pic {
+  height: 45%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card-pic img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}

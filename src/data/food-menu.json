@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Nasi Goreng Super",
+    "price": 15,
+    "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat orci sagittis, scelerisque enim eu, dapibus sem.",
+    "img": "menu.png"
+  },
+  {
+    "name": "Mi Goreng Jembatan Sambaliung",
+    "price": 10,
+    "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat orci sagittis, scelerisque enim eu, dapibus sem.",
+    "img": "menu.png"
+  },
+  {
+    "name": "Caviar Sungai Segah",
+    "price": 80,
+    "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat orci sagittis, scelerisque enim eu, dapibus sem.",
+    "img": "menu.png"
+  }
+]
