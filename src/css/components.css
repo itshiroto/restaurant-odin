@@ -1,3 +1,5 @@
+/* NAVBAR */
+
 #nav-bar {
   display: flex;
   position: fixed;
@@ -16,7 +18,7 @@
   text-decoration: none;
   color: white;
   width: 7em;
-  height: 40px;
+  height: 50px;
   text-align: center;
   cursor: pointer;
 }
@@ -35,13 +37,23 @@
   font-size: 1.4em;
 }
 
+/* CARDS */
+
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
   margin: 5px;
   border-radius: 10px;
   overflow: hidden;
   max-width: 300px;
   min-width: 250px;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+
+.card:hover {
+  transform: scale(1.05, 1.05);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .card-title, .card-desc, .card-price {
