@@ -1,11 +1,11 @@
 import { createContainer, heading as components } from './components.js'
 
-import css from './css/home.css';
+import './css/home.css';
 import data from './data/page.json';
 
 data = data.home;
 
-const home = (() => {
+export default (() => {
   const name = () => {
     const el = components.subtitle(data.subtitle);
     el.id = "home-subtitle";
@@ -41,5 +41,3 @@ const home = (() => {
 
   return render;
 })()
-
-export default home;

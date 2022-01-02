@@ -36,17 +36,15 @@ function menuList() {
   const base = document.createElement('div');
   base.id = 'menu-list';
   menu.forEach(el => {
-    el.price = "Rp" + (el.price * 1000).toLocaleString()
     base.appendChild(card(el));
   });
   return base;
 }
 
-function init() {
+export default function() {
   const container = createContainer();
   container.appendChild(header());
   container.appendChild(menuList());
   return container;
 }
 
-export default init;

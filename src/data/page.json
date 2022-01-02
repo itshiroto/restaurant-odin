@@ -6,6 +6,10 @@
   },
   "menu": {
     "title": "Menu",
-    "subtitle": "All ranged from affordable to luxurious"
+    "subtitle": "All ranged from affordable to luxurious."
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Get more information about reservation booking, and more."
   }
 }

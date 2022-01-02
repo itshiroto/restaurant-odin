@@ -1,19 +1,19 @@
 [
   {
     "name": "Nasi Goreng Super",
-    "price": 15,
+    "price": "Rp15.000",
     "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat orci sagittis, scelerisque enim eu, dapibus sem.",
     "img": "menu.png"
   },
   {
     "name": "Mi Goreng Jembatan Sambaliung",
-    "price": 10,
+    "price": "Rp10.000",
     "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat orci sagittis, scelerisque enim eu, dapibus sem.",
     "img": "menu.png"
   },
   {
     "name": "Caviar Sungai Segah",
-    "price": 80,
+    "price": "Rp80.000",
     "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis volutpat orci sagittis, scelerisque enim eu, dapibus sem.",
     "img": "menu.png"
   }
