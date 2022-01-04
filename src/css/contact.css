@@ -1,0 +1,43 @@
+#contact-body {
+  margin: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#social-body {
+  padding: 0 20px;
+}
+
+.social-item {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.social-item svg {
+  height: 1.4em;
+  width: 1.4em;
+}
+
+.social-item p {
+  margin: 0;
+  margin-left: 10px;
+}
+
+#contact-map {
+  max-width: initial;
+  min-width: initial;
+  width: 100%;
+}
+
+#map-body {
+  height: 400px;
+}
+
+#map-iframe {
+  height: 100%;
+  width: 100%;
+  border: 0;
+}
