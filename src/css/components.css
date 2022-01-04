@@ -1,6 +1,7 @@
 /* NAVBAR */
 
 #nav-bar {
+  z-index: 2;
   display: flex;
   position: fixed;
   top: 0;
