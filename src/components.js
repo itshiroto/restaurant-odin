@@ -1,4 +1,4 @@
-import navCSS from "./css/components.css";
+import "./css/components.css";
 import menu from "./data/nav-menu.json";
 import { changePage, updateURL } from './controller.js'
 
@@ -28,8 +28,8 @@ const nav = (() => {
       // menu.href = '#';
       menu.classList.add('nav-item', 'flex', 'jc-center', 'al-center');
       menu.addEventListener("click", () => {
-        changePage(obj.title);
         updateURL(obj.title);
+        changePage(obj.title);
       });
 
       navMenu.appendChild(menu);
@@ -72,6 +72,7 @@ const heading = (() => {
 })();
 
 const card = (() => {
+
   function title(text) {
     const el = document.createElement('h1');
     el.classList.add("card-title");
@@ -85,7 +86,7 @@ const card = (() => {
     return el;
   }
   function desc(text) {
-    const el = document.createElement('p');
+    const el = typeof (text) == "object" ? document.createElement('div') : document.createElement('p');
     el.classList.add("card-desc");
     el.innerHTML = text;
     return el;
@@ -101,23 +102,23 @@ const card = (() => {
     return div
   }
 
-  function render(obj) {
+  return (obj) => {
     const el = document.createElement('div');
     el.classList.add('card');
 
     const body = document.createElement('div');
     body.classList.add('card-body');
 
-    body.appendChild(title(obj.name));
-    body.appendChild(price(obj.price));
-    body.appendChild(desc(obj.desc));
-
-    el.appendChild(image(obj.img));
+    if (obj) {
+      if (obj.name) body.appendChild(title(obj.name));
+      if (obj.price) body.appendChild(price(obj.price));
+      if (obj.desc) body.appendChild(desc(obj.desc));
+      if (obj.img) el.appendChild(image(obj.img));
+    }
     el.appendChild(body);
 
-    return el;
+    return { el, body };
   }
-  return render;
 })();
 
 

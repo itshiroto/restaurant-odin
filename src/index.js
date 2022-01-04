@@ -1,7 +1,7 @@
 import { nav } from './components.js';
 import { changePage } from './controller.js'
 
-import css from './css/index.css';
+import './css/index.css';
 
 "use strict";
 

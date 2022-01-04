@@ -22,21 +22,20 @@ const header = (() => {
     return el;
   }
 
-  const render = () => {
+  return () => {
     const el = document.createElement('div');
     el.append(title(), subtitle());
     el.id = "menu-header";
+    el.classList.add("header");
     return el;
   }
-
-  return render;
 })();
 
 function menuList() {
   const base = document.createElement('div');
   base.id = 'menu-list';
   menu.forEach(el => {
-    base.appendChild(card(el));
+    base.appendChild(card(el).el);
   });
   return base;
 }

@@ -27,3 +27,9 @@ body {
 .jc-center {
   justify-content: center;
 }
+
+.header {
+  padding-top: 100px;
+  /* flex-direction: column; */
+  text-align: center;
+}
