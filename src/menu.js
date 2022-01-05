@@ -6,18 +6,18 @@ import {
 
 import './css/menu.css'
 import page from './data/page.json'
-page = page.menu;
+const data = page.menu;
 
 import menu from './data/food-menu.json'
 
 const header = (() => {
   const title = () => {
-    const el = heading.title(page.title)
+    const el = heading.title(data.title)
     el.id = 'menu-title';
     return el;
   };
   const subtitle = () => {
-    const el = heading.subtitle(page.subtitle);
+    const el = heading.subtitle(data.subtitle);
     el.id = 'menu-subtitle';
     return el;
   }

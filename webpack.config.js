@@ -1,11 +1,11 @@
 const path = require('path');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const devMode = process.env.NODE_ENV !== "production";
+const envMode = process.env.NODE_ENV;
 
 module.exports = {
-  // mode: 'development',
+  mode: envMode,
   entry: './src/index.js',
-  devtool: 'inline-source-map',
+  // devtool: 'inline-source-map',
   devServer: {
     // contentBase: './dist',
     static: {
@@ -19,7 +19,7 @@ module.exports = {
       {
         test: /\.(sa|sc|c)ss$/i,
         use: [
-          devMode ? "style-loader" : MiniCssExtractPlugin.loader,
+          envMode === 'development' ? "style-loader" : MiniCssExtractPlugin.loader,
           "css-loader",
           // "postcss-loader",
           // "sass-loader",
@@ -31,7 +31,7 @@ module.exports = {
       },
     ],
   },
-  plugins: [].concat(devMode ? [] : [new MiniCssExtractPlugin()]),
+  plugins: [].concat(envMode === 'development' ? [] : [new MiniCssExtractPlugin()]),
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),

@@ -1,9 +1,9 @@
 import { createContainer, heading as components } from './components.js'
 
 import './css/home.css';
-import data from './data/page.json';
+import page from './data/page.json';
 
-data = data.home;
+const data = page.home;
 
 export default (() => {
   const name = () => {
