@@ -95,6 +95,7 @@
 
 .card-body {
   padding: 15px;
+  overflow: hidden;
 }
 
 .card-pic {
@@ -161,6 +162,10 @@
   justify-content: center;
   /* grid-template-columns: repeat(auto-fill, 350px); */
   gap: 20px;
+}
+
+#menu-list .card {
+  height: min(500px, 768px);
 }
 
 #contact-body {
